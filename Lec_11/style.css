@@ -1,0 +1,16 @@
+* {
+  background-color: aqua;
+}
+
+h1 {
+  color: red;
+  background-color: yellowgreen;
+}
+
+.hello {
+  background-color: cadetblue;
+}
+
+#hello {
+  background-color: pink;
+}
