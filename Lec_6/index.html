@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Media Example</title>
+  </head>
+  <body>
+    <!-- Video with Relative URL -->
+    <h2>Video (Relative URL)</h2>
+    <video width="640" height="360" controls>
+      <source src="/Lec_6/sample.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Video with Absolute URL -->
+    <h2>Video (Absolute URL)</h2>
+    <video width="640" height="360" controls muted>
+      <source
+        src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <hr />
+
+    <!-- Audio with Relative URL -->
+    <h2>Audio (Relative URL)</h2>
+    <audio controls>
+      <source src="/Lec_6/sample.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Audio with Absolute URL -->
+    <h2>Audio (Absolute URL)</h2>
+    <audio controls>
+      <source
+        src="https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+</html>

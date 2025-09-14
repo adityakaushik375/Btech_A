@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Concepts Showcase</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>HTML Concepts Showcase</h1>
+      <nav>
+        <ul>
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#paragraphs">Paragraphs</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#block-inline">Block & Inline</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Headings Section -->
+      <section id="headings">
+        <h2>HTML Headings</h2>
+        <h1>This is a Heading 1</h1>
+        <h2>This is a Heading 2</h2>
+        <h3>This is a Heading 3</h3>
+        <h4>This is a Heading 4</h4>
+        <h5>This is a Heading 5</h5>
+        <h6>This is a Heading 6</h6>
+      </section>
+
+      <!-- Paragraphs Section -->
+      <section id="paragraphs">
+        <h2>HTML Paragraphs</h2>
+        <p>
+          This is a paragraph element. It is used to structure text content on a
+          webpage.
+        </p>
+        <p>
+          This is another paragraph with <strong>bold text</strong> and
+          <em>italicized text</em>.
+        </p>
+      </section>
+
+      <!-- Images Section -->
+      <section id="images">
+        <h2>HTML Images</h2>
+        <p>Image element (empty element):</p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCiQSSoCfHsEuLIcJA7R8TuWfJFl02NABEPQ&s"
+          alt="Placeholder Image"
+        />
+        <p>Image with width and height attributes:</p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Vrl23N_uke2OXapUMBcJWXJd8G94ZcYDbQ&s"
+          alt="Placeholder Image"
+          
+          height="100"
+        />
+      </section>
+
+      <!-- Links Section -->
+      <section id="links">
+        <h2>HTML Links (Anchor Elements)</h2>
+        <p>
+          This is a <a href="https://www.example.com">link to example.com</a>.
+        </p>
+        <p>
+          This is a <a href="#headings">link to the Headings section</a> on this
+          page.
+        </p>
+        <p>
+          Link that opens in a new tab:
+          <a href="https://www.example.com" target="_blank">Example.com</a>
+        </p>
+      </section>
+
+      <!-- Multimedia Section -->
+      <section id="multimedia">
+        <h2>HTML Multimedia</h2>
+
+        <h3>Video Element</h3>
+        <video width="320" height="240" controls>
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Audio Element</h3>
+        <audio controls>
+          <source src="https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- Lists Section -->
+      <section id="lists">
+        <h2>HTML Lists</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ol>
+
+        <h3>Description List</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language</dd>
+
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets</dd>
+        </dl>
+      </section>
+
+      <!-- Tables Section -->
+      <section id="tables">
+        <h2>HTML Tables</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>25</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>Maria</td>
+              <td>30</td>
+              <td>Spain</td>
+            </tr>
+            <tr>
+              <td>Ahmed</td>
+              <td>22</td>
+              <td>Egypt</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Forms Section -->
+      <section id="forms">
+        <h2>HTML Forms</h2>
+        <form action="/submit" method="post">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+          </div>
+
+          <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+              <option value="australia">Australia</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+
+          <div>
+            <label>Interests:</label>
+            <input
+              type="checkbox"
+              id="coding"
+              name="interests"
+              value="coding"
+            />
+            <label for="coding">Coding</label>
+
+            <input
+              type="checkbox"
+              id="design"
+              name="interests"
+              value="design"
+            />
+            <label for="design">Design</label>
+
+            <input type="checkbox" id="music" name="interests" value="music" />
+            <label for="music">Music</label>
+          </div>
+
+          <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </section>
+
+      <!-- Block and Inline Elements Section -->
+      <section id="block-inline">
+        <h2>Block and Inline Elements</h2>
+
+        <h3>Block Elements</h3>
+        <p>
+          Block elements take up the full width available and start on a new
+          line.
+        </p>
+        <div>This is a div (block element)</div>
+        <p>This is a paragraph (block element)</p>
+
+        <h3>Inline Elements</h3>
+        <p>
+          Inline elements only take up as much width as necessary and do not
+          start on a new line.
+        </p>
+        <p>
+          This is a paragraph with <span>a span (inline element)</span>,
+          <strong>strong text (inline)</strong>, and
+          <em>emphasized text (inline)</em>.
+        </p>
+        <p>Here's a <a href="#">link (inline element)</a> within text.</p>
+      </section>
+
+      <!-- Empty Elements -->
+      <section id="empty-elements">
+        <h2>Empty Elements</h2>
+        <p>Empty elements don't have closing tags and don't contain content:</p>
+        <p>
+          Line break: <br />This text is on a new line after the br element.
+        </p>
+        <p>Horizontal rule:</p>
+        <hr />
+        <p>
+          Input element:
+          <input type="text" placeholder="This is an empty element" />
+        </p>
+        <p>
+          Image element:
+          <img src="https://images.unsplash.com/photo-1664735246075-8c8d15beb9e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGltYWdlJTIwcGxhY2Vob2xkZXJ8ZW58MHx8MHx8fDA%3D" height="50" alt="Small placeholder" />
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created as an HTML concepts demonstration</p>
+      <p>&copy;  HTML Tutorial</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>table element</h3>
+    Purpose: Defines the entire table structure.
+    <h3>thead element</h3>
+    Purpose: Groups the header content of a table.
+    <!-- <thead>
+    <tr>
+    <th>ID</th>
+    <th>Name</th>
+    </tr>
+    </thead> -->
+
+    <h3>tbody</h3>
+    Purpose: Contains the main data rows of the table.
+
+    <h3>tr</h3>
+
+    Purpose: Table Row
+
+    <h3>td</h3>
+
+    Purpose: Table Data Cell
+
+    <h3>th</h3>
+
+    Purpose: Table Header Cell
+
+    <table border="1">
+      <caption>
+        Employee Details
+      </caption>
+
+      <thead>
+        <tr>
+          <th rowspan="2">ID</th>
+          <th rowspan="2">Name</th>
+          <th colspan="2">Department</th>
+          <th rowspan="2">Email</th>
+        </tr>
+        <tr>
+          <th>Department Name</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Jane Doe</td>
+          <td>Marketing</td>
+          <td>New York</td>
+          <td>jane@example.com</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>John Smith</td>
+          <td>Engineering</td>
+          <td>San Francisco</td>
+          <td>john.smith@example.com</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Emily Clark</td>
+          <td>Finance</td>
+          <td>Chicago</td>
+          <td>emilyc@example.com</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="5">Total Employees: 3</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <table border="1" cellpadding="10" cellspacing="0">
+      <tr>
+        <td colspan="4">0</td>
+      </tr>
+      <tr>
+        <td><button>7</button></td>
+        <td><button>8</button></td>
+        <td><button>9</button></td>
+        <td><button>/</button></td>
+      </tr>
+      <tr>
+        <td><button>4</button></td>
+        <td><button>5</button></td>
+        <td><button>6</button></td>
+        <td><button>*</button></td>
+      </tr>
+      <tr>
+        <td><button>1</button></td>
+        <td><button>2</button></td>
+        <td><button>3</button></td>
+        <td><button>-</button></td>
+      </tr>
+      <tr>
+        <td><button>0</button></td>
+        <td><button>.</button></td>
+        <td><button>=</button></td>
+        <td><button>+</button></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <button>Clear</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

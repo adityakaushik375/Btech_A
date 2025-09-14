@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Form Example</title>
+  </head>
+  <body>
+    <h1>HTML Form</h1>
+
+    <form>
+      <!-- Text input: for entering plain text -->
+      <label for="username">Username:</label><br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        required
+        maxlength="30"
+      /><br /><br />
+
+      <!-- Email input: for email address with validation -->
+      <label for="useremail">Email:</label><br />
+      <input
+        type="email"
+        id="useremail"
+        name="useremail"
+        placeholder="example@example.com"
+        required
+      /><br /><br />
+
+      <!-- Password input: hides user input -->
+      <label for="userpassword">Password:</label><br />
+      <input
+        type="password"
+        id="userpassword"
+        name="userpassword"
+        placeholder="Create a password"
+        required
+        minlength="8"
+      /><br /><br />
+
+      <!-- Radio buttons: choose one from multiple options -->
+      <label>Subscription Plan:</label><br />
+      <input
+        type="radio"
+        id="plan-basic"
+        name="subscription"
+        required
+      />
+      <label for="plan-basic">Basic</label><br />
+
+      <input
+        type="radio"
+        id="plan-premium"
+        name="subscription"
+      />
+      <label for="plan-premium">Premium</label><br />
+
+      <input type="radio" id="plan-pro" name="subscription" />
+      <label for="plan-pro">Pro</label><br /><br />
+
+      <!-- Checkbox: user agreement or multiple selections -->
+      <legend>Select your favorite subjects:</legend>
+
+      <input type="checkbox" id="math" name="favoriteSubjects" />
+      <label for="math">Math</label><br />
+
+      <input
+        type="checkbox"
+        id="science"
+        name="favoriteSubjects"
+        
+      />
+      <label for="science">Science</label><br />
+
+      <input
+        type="checkbox"
+        id="history"
+        name="favoriteSubjects"
+        
+      />
+      <label for="history">History</label><br />
+
+      <input
+        type="checkbox"
+        id="literature"
+        name="favoriteSubjects"
+        
+      />
+      <label for="literature">Literature</label><br />
+
+      <input type="checkbox" id="art" name="favoriteSubjects"  />
+      <label for="art">Art</label><br /><br />
+
+      <!-- Textarea: multi-line text input -->
+      <label for="comments">Additional Comments:</label><br />
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="50"
+        placeholder="Write your comments here..."
+      ></textarea
+      ><br /><br />
+
+      <!-- Number input: for numeric values -->
+      <label for="age">Age:</label><br />
+      <input
+        type="number"
+        id="age"
+        min="1"
+        max="120"
+        placeholder="Enter your age"
+        required
+      /><br /><br />
+
+      <!-- Datetime-local input: for date and time -->
+      <label for="appointment">Preferred Appointment Date & Time:</label><br />
+      <input
+        type="datetime-local"
+        id="appointment"
+        name="appointment"
+        required
+      /><br /><br />
+
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
