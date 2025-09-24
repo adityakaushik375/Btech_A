@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Common box styling */
+.box {
+  width: 200px;               /* Content width */
+  height: 100px;              /* Content height */
+  background: lightblue;      /* Content area */
+  margin: 20px;               /* Space outside */
+  padding: 20px;              /* Space inside */
+  border: 5px solid darkblue; /* Border */
+  text-align: center;
+  line-height: 100px;         /* Vertical text align */
+  font-weight: bold;
+}
+
+/* Different variations */
+.one {
+  background: lightgreen;
+  border: 5px solid green;
+  padding: 10px;
+}
+
+.two {
+  background: lightcoral;
+  border: 10px dashed darkred;
+  padding: 30px;
+}
+
+.three {
+  background: lightgoldenrodyellow;
+  border: 8px dotted goldenrod;
+  margin: 40px;  /* Extra outer space */
+}

@@ -1,0 +1,36 @@
+/* ===== Basic Selectors ===== */
+p {
+  color: blue;
+}
+
+#main-heading {
+  color: red;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+
+h1, h2, p {
+  text-align: center;
+}
+
+input[type="text"] {
+  border: 2px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Card */
+.card {
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #222;
+  text-align: center;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: bolder;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  width: 1.8rem;
+}
+
+.form-options{
+    margin-bottom: 1rem;
+}
+.form-options a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.lost-password{
+    margin-left: 7rem;
+}
+
+/* Button */
+button {
+  width: 96%;
+  padding: 10px;
+  background: #0073e6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Signup */
+.signup {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+}
+
+.signup a {
+  color: #0073e6;
+  text-decoration: none;
+}

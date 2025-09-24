@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+div {
+  width: 100vw;
+  height: 100vh;
+  margin: 20px auto;
+  border: 2px solid #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* 1. Background Color */
+.bg-color {
+  background-color: teal;
+}
+
+/* 2. Background Image */
+.bg-image {
+  background-image: url("https://picsum.photos/200/300");
+}
+
+/* 3. Background No Repeat */
+.bg-repeat {
+  background-image: url("https://picsum.photos/400/500");
+  background-repeat: no-repeat;
+}
+
+/* 4. Background Position */
+.bg-position {
+  background-image: url("https://picsum.photos/400/500");
+  background-repeat: no-repeat;
+  background-position: right bottom; /* bottom-right corner */
+}
+
+/* 5. Background Size */
+.bg-size {
+  background-image: url("https://picsum.photos/400/500");
+  background-size: cover;  /* cover entire box */
+  background-position: center;
+}
+
+/* 6. Linear Gradient */
+.linear-gradient {
+  background: linear-gradient(140deg, #ff7e5f, #feb47b,orange);
+}
+
+/* 7. Radial Gradient */
+.radial-gradient {
+  background: radial-gradient(circle, #74ebd5, #9face6,rgb(78, 78, 214));
+}

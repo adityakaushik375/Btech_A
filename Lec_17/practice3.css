@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.card-header {
+  margin-bottom: 15px;
+}
+
+.card-header h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+  margin: 0;
+}
+
+.card-header a {
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.card-header a:hover {
+  text-decoration: underline;
+}
+
+.customer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.customer-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+.customer-list li:first-child {
+  border-top: none;
+}
+
+.customer-list img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.customer-list .info {
+  margin-left: 10px;
+}
+
+.customer-list .info .name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #111;
+  margin: 0;
+}
+
+.customer-list .info .email {
+  font-size: 13px;
+  color: #666;
+  margin: 2px 0 0;
+}
+
+.customer-list .amount {
+  font-size: 14px;
+  font-weight: bold;
+  color: #111;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+}
