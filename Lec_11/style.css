@@ -1,16 +1,20 @@
-* {
-  background-color: aqua;
-}
-
+/* h1 styling */
 h1 {
-  color: red;
-  background-color: yellowgreen;
+  color: red; /* Named color */
+
+  background-color: yellowgreen; /* Named color */
 }
 
-.hello {
-  background-color: cadetblue;
+/* p styling */
+p {
+  color: rgb(255, 0, 0); /* RGB format */
+
+  background-color: rgb(154, 205, 50); /* RGB format */
 }
 
-#hello {
-  background-color: pink;
+/* h2 styling */
+h2 {
+  color: #ff0000; /* Hex format */
+
+  background-color: #9acd32; /* Hex format */
 }
