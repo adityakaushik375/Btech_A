@@ -36,7 +36,7 @@ h1 {
 }
 
 .three {
-  background: lightgoldenrodyellow;
+  background: rgb(199, 199, 23);
   border: 8px dotted goldenrod;
   margin: 40px;  /* Extra outer space */
 }
