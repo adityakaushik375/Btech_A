@@ -14,7 +14,9 @@ h1 {
 
 div {
   width: 100vw;
+  min-height: 90vh;
   height: 100vh;
+  max-height: 110vh;
   margin: 20px auto;
   border: 2px solid #333;
   color: white;
