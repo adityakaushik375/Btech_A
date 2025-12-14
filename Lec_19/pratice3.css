@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(161, 208, 161);
+}
+.header {
+  max-width: 1200px;
+  margin: 40px auto;
+  border-bottom: 1px solid rgb(6, 6, 6);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.grid-container section img {
+  width: 100%;
+  border: 8px solid white;
+  border-radius: 5px;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.grid-item-1 div h2 {
+  justify-self: end;
+}

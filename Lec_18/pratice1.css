@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Bitcount+Single+Ink:wght@100..900&family=Bungee&family=Gravitas+One&family=Hind:wght@300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bebas Neue;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: palevioletred;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: purple;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 4rem;
+  height: calc(83vh - 100px);
+}
+
+main h2 {
+  font-size: 2rem;
+  color: purple;
+  letter-spacing: 2px;
+}
+
+main h3 {
+  font-size: 1.6rem;
+  color: purple;
+  letter-spacing: 2px;
+}
+main h2 {
+  font-size: 1.4rem;
+  color: rgb(40, 29, 40);
+  letter-spacing: 2px;
+}
+
+button {
+  border: 0;
+  background-color: purple;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+.left {
+  width: 30vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+  padding: 1rem 2rem;
+}

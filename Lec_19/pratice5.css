@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+header {
+  background: #ddd;
+  padding: 0.5rem;
+}
+
+nav {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(3, 150px);
+  gap: 1rem;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+main div {
+  background-color: #fff;
+}
+
+.text {
+  padding: 1rem;
+  border: 3px solid rgb(207, 127, 127);
+  border-radius: 5px;
+}
+.image {
+  border: 15px solid #f3dbdb;
+  border-radius: 5px;
+  grid-row: span 2;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

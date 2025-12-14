@@ -1,0 +1,92 @@
+<!-- Flexbox = Flexible Box Layout
+Used to align items horizontally or vertically with full control.
+
+Enable Flex-Conatiner using:
+display: flex;
+
+
+Main Axis → direction defined by flex-direction
+
+Cross Axis → perpendicular to main axis
+
+1. flex-direction
+
+Controls main axis direction.
+
+2. justify-content
+
+Align items main axis.
+
+3. align-items
+
+Align items cross axis.
+
+4. align-self
+
+Override align-items for a single item
+
+5. flex-wrap
+
+Allows items to wrap to next line.
+
+6. flex-grow
+
+Space distribution when extra space exists.
+
+7. flex-shrink
+
+Controls shrinking when space is less. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pratice1.css">
+  </head>
+ 
+  <body>
+    <header>
+      <div>
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAABhlBMVEX/////Fbf+/v7/VAD/khy5HyqzAAD/ALT/ALH/VwD/ALX/FLr/UgD/FLv/UAD/lBy4Hyb/mBr/AL3/iQD/jQD/QwC1AAC2ABa1Hxv/lwD78/S4FyS1ABG7Ii7/SgCzCyqzIBP+elf+wuTv1NbszM7doKTGVl3gqq336OnKY2m2HyHcIni8KDP+oNf+ZsX/jCDlurzPdXrWjpLrdirEI0b2Haa9ITT+cmS3DBy+ND7GOjDlIIr+aXH+M5D0HqPOMyzVI2vOSC7+VIrLJFb+VMD+rJv+qtv/dhn+knj+jNH+2u3+tN/CR07+6PP+O7v+yL7+7+j+4dD+qWT+hM7Oc3nqIJL0gijiaSrgVFH/ZX3uTQn/LKPAPkb/dl3Tg4jtSiPgQSr/XIH+SpX+OIT+PXj+Qmr+SFj+TUP+Uyb+gUnQI2HZWi3+UTP+f07+d6T+olHNOxT+xJrUIADbUAD/bkT+0bT+vY3+zej/aRf/m0L+hWj+v7O/UEvCADX+oo7/gRvwp8PTT3O1L38+AAASHUlEQVR4nO1dCXcbtxHe5W1RFCnGPMolJVqSD0lWLDmSQlut4lSxGzu2nMSW3Rx12qZHmrRNjyTO0bjpPy+wC2CxuwB2hsJS5Huel/cUH8IMvp358M1gKTvOS3tpM2u5zB0Qy9rHRCzHbWYdTMpyUcvaQwbrT85yccvage31J2cJqKxvJ+v1J2dKrGzuJuv1J2jx8K3vJr7gDKMlbWV7/f765Z7t3cgOdtafbYe/ZWf9CZq0k0Hf87xO+1nOKlrhWmvF/sgb9fsXZxUtsZXepXYxsI63ahGtcKWdEnPQv3FlJktRxLzW94rCSvaevXBw5epIrO+112YQLRHx5VJRttJjS2gJB6slL+Lg8sxVotjK9XYxap1LVtASDrZLMQckeWcLLT1WxeLIBlp6rGYOLbGVixyr5eXBYHnZHlpxrBrdLv0v+EV7ptCK89XyzdcKi4uFp8UArs76aTcjDg/moLt74jarJ0fDxszxVnwrN58s1guFQr2++DRAq//sdJsR52CQuBuDk2bVdd1qc2+3G6C1PStoxbbS/bUPlW+L124un/7R82/tjfxEatyqUahcH67NYYDW6mygxYPMFf0jfXj4wc8KwuqLXyyfdjPiGz/2Hex/+BHHiljtMGCufs+ZHbAc577nE+9e8+eLBckWX/PR6vTGRot/306HLjT48NyeBJZbqxQpWt4NZwbQ4lt5RrfSaOxVm6/XCxG0nlC0vI/H3Yw4CNsBVvlze65sVXefojU69SmSvUXOdIqVGweLodXZGW8zghH902OQz+fPVVwVWtMvtyLk3ihWSIE0fxMDi1Vie7wTi3/LwGNY5c+5rhqt1SkvRB7dDbqVDZ9MmhfiYBUCCdG+MsZmOL7rtHkezCvBcqsVClbDy001WhHu7R76xKsAq+CfieNwMHfgy13CV2qw3Oped+ppK0JYw5OaqwOrsPgmQauD1qYRwtr/LK8DiyiI4bQreRZYr0+xOgiwUoNVWLxJN7OGTC25ypc/OacHy60dDMet9MkYf4qXyFa6t5os7CTB++q0MKCFgmMV7uA6qfLBbxlWarDc5q2uL1CmNLUEn5DE2titiajj0oGhRQUEjlX4X12lRfgGxyohHbjf3Q0i5KdVP8iqYSAF/fqiCqxAQAj9gHDgq4aBwCouSkMbkDOxNJ2FyJ8g7diGUgcSa3diRyKih+MOaG/ADsIArMOqEqvq3tA/cqcwtXhIF0kRdg9qYcw1uZFOkDyiEKUiXP4kL4H1kRosQvKEtvrXpzC1pEN946gph/w7HVj1a5hC5H/rqlcchIRFwfqFBiy3+fnGVBYiTw86axhEIq79UgdWoU5pqwM7EeWTsChjZQDLrQ6m8USUT8JhlENqv9eC5WvT0WPQZqTM3f8wHwHr05oWLEpb4kScEBapxqLpkZOwuxmNvfqRHqxCHSpNpeNDqFEO1h+0YLm1TUJb7ekaBPKtrHvFxm489EMTWERtNa6m94hy5r4RxSqf/6MeLLe22yh6l6aqEFkoazSx9hIMYgDLH0B00g8sKXMH+bj9qamCiVmli1RzWRuPpBhTDYE1TWD5+iH1wBKZO4qqhsD+bAKL6oeGNz0zZumgauwmA29eU/Y7vBCJfkitE565JUUR5vOfmcBym0cNSO5OyqSDqqvo05p/MYHlF2JKnfA/oxIrARVheCNYfiFOjdjiSXHJUxWhbuwQLcSiqU64A9IcLH+mAsuIlV+IIncnDY56L5TdVUVIgtU1h1IhdkxaSGJ3RREa+h3+tMiJ2MaOzrIx/txJjQyTJ6FrlPBSIeq1EHfweKQsQqOED4wW4mAqOD5UQHE5yqxqkPCiEIWO1zogDbTiJPTB0kt49riINJ0KHc8iyPWLjX1NzHtpYFFpqr244olFtLuyCPNmVRqgRQvx7HU838qzUbwnDM0stPzU+mLZu6+RD+w3t0uaIsynCC0/uUmPONqZErCobNi4pQu5+cR8HNLcGoSvCSkdOF5DU4T5NKHlp9atjbOXDzwZSFO4oY1Ufb+TKEQlBQvZ0NEWISGttDIk1jh7+RCSr1JiMbBStINfiG8W+5e1YFHZEBvMRMDSEYCUWifds5YP/Lnf99QSiwWaph0KTGwlx4AhJYZXXwqw0rSD64stMY8/S7CoHlVLrMCMEy2RWk+XFR1cSIlFPVbGiZYIgnB8/yynD/y53/A2PjdyLACswqLidOcOHo+UfY4w45CGGeV43lWdHVjONtGjxjjNcwdeiE+WR8+UYNHE0rM7tfTjkNqGmhYniVXOGZjY3Qcr/Tgs+BxfiqYWd3DJ00osVoeA49BvqDtnllpsK6TR0Wl3HibgOPQ5PiYcxVlrYncfrJRWmoWx2zA27BPAyiEN9Ik5VtMFj5xaT5cjwjFMLBO7+2B9CgGrejgslnJnk1oisUyyITDTnYWMVrSf5onVNrM7tdTu0LfmUeOMZqZSYhlkA4sSBlb9NTm1eGLd98zsTi21OwyMyAd+4p4JWBf7KbLBB8s8WQ5T603vcQwsmlh67S7qEAYWkQ+js0gt7nHUGKrfj4qApXntKJFa18LUChkrhd19sHSvHcWteyajGsFYG7fS+QLS8ASp9YVIrfAoTIUK1vD4gWyeRWqFiaWfNoQGaniC3BpEU4sklnYyIxuM4UkkpE+Y+IEoEkszS44ZkOEJWE8jqUXnGelFmAczPFWmE9dafC8DrwHKfyjD03m8nFrOOiyxoAxP0Bo0+hNOLbaV7X5KoyPAAml4P7WeeOJTPbQrTJcNAVip8oVZdeKpxfdywxvAuALM8FQ+lMKP1+146bIhAAuk4f1Q9hujiXaIbCtrJWBiAW54wtS65onhQw+aWHCGd6sn3ckOH5ir+9DEInUI5SwqH3hqOdehiZXP/xVKWm5z37s6QbD4SdXuHkCTv/k3OFp1JoWcXAmgR3kdQiOhqaW5ScoSrPUROLHc2gdQhqctYjB2ci6OoFBBpzRBLPviknJiWF2BMxYJ8O9g0iKFOPRJxSnCEws0h2dGUqs9sQ9uMjfPRkVwfG753nk4WPUnyw4VJh04Vvn5D8CkRVJLfFZhQljl2ojEcivOl3CwCov/WHPI+QFmd2JL782BgyFaiyvfCYF1sQMT777NveX8E5FahWvrjrP6L0Ri5VvOW3C0aoMJtdNcL3qwrjCw8pbz3iuY1Pp3z9lZQGC1cMHZKsPBOuhOpucJOx1wbASs504OA1bh/HavhcAqv3TbuQcHy61uTEaYckGKSSxCWQ6KtAqF97/CJFa+teo46UNIYbXN7iTu8rkgLQEGpMIIZeVwpFX/FQorQlmO8yqctFx3OInXRHiH2/kckViEsnI40qp/O4/BilBWzrmDqMParU726oF3uO30Kx0ZrHtUN2HAuoZLLEJZOecBItfdvWEp83serhv6R3ANSCmLftP78DpEVyGVTQ4is9zmUfav5LLlB2mX0BGbe9UH62sEWOdQVTi/4Dt4hCCt6uHQyxgstvpaO+XthqiV3/H38i68DpFVuPC272AFlVr7WVM8nzf0EZ0OqcIHwcgFUYWoxMovPfTB6mFIq3rQz5biOb2XMILUdY8Zk34DrcM6Dqt8K+Bq5xgjHqob2VK8oHfAxWpoc3dZTGDx8F9kFX7FHCA6HqoesqV4tvTVIfS23Dfa6wTfCAQLKbJ84eCvj+l4qHrIcrws1DtKN9Beh30nVDzgEisQDr4DFFjNI/4ZmAzB2ilhdAMTDjm4eKgjqzAQDjmseHCrJ6X4S6y2wXJy7QaGsZhwCE4GUB2iq/Bt4QAlHtxasZTZDSILaLuEmTeQKhR3pjnnu0yq8KEAK4cRD25tM7trHrbspRKK3ueOpVcXIJMHbKtDJw7CAWJcSmyvlJnUYqWEpHc6cRB7gYh4ZKuTX/hecoCZPPgUn5HUYuFcxtE7l+/suwFFiGx1mHznrIiqQ0LxGQ1M2aL3uyisXDfyblq6iMdXYU5+GigR79a6GV23BmteKaHUu5DvLKR0EY+uwgsRBygRT1R8NndiLJiLpfQP98lWuccVB7AO0VX4QwQs1ATQrR5mU4e8CvdR9C6qkH9Jq0N8FfaiT+MYFV1zP5M65FWIE1miCvmXtDocuwr5F2QdbmZRhyyUyyVUmodV6ADrcOwq5F9wdehWsqhDtuCl1M/pxCyMBFSH41ehcIA7D5u7GdRhsF6vBH59zbe5rQRY5jocW5GGDnB1WD2wr0tZINslTCChIpXXsFuFDxNgIevQ5f2hdbB2jnD0fiynOPtfU3+IrcL5lpN8Grj+sHlkvT9ky7VxrU75jgIsU3+Inc4svK1w8A62Dm3PaYLVVrFVGKUDthnDnKaOpfdVBVi4OQ2pwzW7YLEwLiKr8NVogrNfGOal2BnpvNIB6g0Rt3Zk+cU2tth/kFW4otyL/k2tcW8qYg6e4+rwpJEBWE4OWYXleBDsl9p7C6xwaL3rKB2gwCJ1aFXEsxjWkFV4VwOWVmphb+0vaBzcRdahVfHAYriOU6QRkRVZyBJlySIrsj5y9HBg9eeQccpCxUBf99OApZFaSMqaX0qe+cwBTmq5JetgOc6PuOH7ihYszZUYkrKWXmgd4K7Emj/aJK1gpVXcdKas0npmih/jDbaYg9w4FF/btEhaLIDLuCuwBL1LS6kpHkdZSXqXHGyhrqYPn1kH6zHuDYckvUtrqVQ8sjFsJehdWh93y1Oz+IYIW2hzrDcc1GupVDyO3+fzRgcoFV/btfd5C/awUPK98ty0l5yjAgtH77eNYN3DpFZt097rNIzfMaQZHc4oNqNQDzhJ2tIlA3OAGZhWDy/bAot5/wmT2OLVGd1qCvWA4neVbog4QKmHqrV3j9gyqHefEm1hYrnELB7H7y3tz7PlhY6I1q39zzJYmLyOTv2UyyVmgCh+l2fvGgeYGWBt0ypYuJFa+Gakbi9JYYoCq2X4kDP/A8xH6g5s3Vqw4wXhu6wUpLHNxIVpHVGEakEac4C55tmzdRziCbNi/Pe/eGrFP4CIoKzWewCwMKk1Z2m0jH9O6k4nsWIstRDKgb/4nuIAE/JPVsFCHIaVlJ8Up04thHJQdzqJkBGpxW+DLYEF7x/SEkuTWnCw0hJrjNSae2TnOGSLwOdpaYmlTi2EzDIdhZGY4amla2XHBAv83pP5KIysKacWHCzzURhxAH4fVzXWnQhYgH8Kk6eWpLXgH5vTi/ekA2jQrraXHQssqCY1iffEopKMB2tSk3hPOAALnsqZgCXeTgYsKneIYLBaoJ/Kyh1Am7Q5q2BBn5BmjqVZNYcGSzfH0jiAzrXsggXjLDBR8if/9Ss4sOYXDG2nygFQ8lgGC+RUfJ4CuGw4jQeClaZHE3EDp/F2OQuks8pbcJ8xjoeBFX5EALg+VD7YPQ1h6QysEXkzjONBOmsexu5RB5CasKyzIC9b8Be5YS75X2WZBWl3Wj+M4QDy5oNlBQ/os8qPwDUSLix0PAAs0RTiHABCT+9nYcYWgcg7RBHKm2GFmAoWqghlB+mFqL9gQRo0meEnYXwzQR2mvhYifb4Xt376iVhGEUiqy1QJL/ocPFj+iZh6HEofHMc6WEkL3pJygB6H0k8kwC4dSNO04xBJWFEHj8wkYovfgVdLc8dIwopuhtKWea48vzTOv9SR4w7MMtEaZcGkcLk3xnOXNvP+eTNpzYvBzHhPI+ea0DLfsIzh0FiH5QdjbSXcjPPleeNEC03ucQemA8peFUIaeKFG8e7E93133lCHQo2O78CAFk5Mw9xpU+sUWEVyS1uHp8AqrHTtwx7rbErxp2OtublxazCyG8f55lt1as2HNXiKp0Fyq6x+2uk3LONsRylXyse902wl3AxREC1Vai0srdpx4PSOVSd6BS8QIe6crSRalUfO6bYio7W6lMytpa9O+TDk+B4lN4DsaBHe7sSczZVXTo2VjFbvQiy5Flq3rTp47saSq7J1+uU13px7rlT45cqjUz/12Gach+daIrvml1rf9+Q/tOFgqxzuYK7s3rOOlfxw3zmuEHdz5XLleKvnWNmKtAqF60KrtUStlX9xxboD8v93xA7eWrG1vtbbg5Wtu3e3Vh440U3aWZ6ulHt4+8WL2w+vZOPAYTu487xncX2Dt9jvWFRzGge2urYsd6DzFrOs158RByBnWa+fuQNL6wOcvXQAdvbSAdTZTHqYGFTMnZO1Dzquy9RH9lt4aS8NYf8H3blC1zH9w6kAAAAASUVORK5CYII="
+          alt="myntra logo"
+          height="50px"
+        />
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="left">
+        <h2>Digital</h2>
+        <h3>Myntra</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aliquid
+          quas voluptate! Nihil amet deserunt voluptatibus sequi voluptas
+          nostrum, labore natus nam, eaque assumenda unde, beatae cumque error
+          mollitia nesciunt.
+        </p>
+        <button>Buy Now</button>
+      </div>
+      <div class="right">
+        <img
+          src="https://rezolve.com/wp-content/uploads/2025/08/case-study-myntra-sm.webp"
+          alt=""
+          height="400"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <p>Made with ❤ by us using flexbox</p>
+    </footer>
+  </body>
+</html>

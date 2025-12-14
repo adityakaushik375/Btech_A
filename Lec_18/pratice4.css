@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #eef2f7;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #ffffffcc;
+  padding: 15px 40px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.logo span {
+  color: #4a6cf7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #4a6cf7;
+}
+
+/* PAGE LAYOUT */
+.page-layout {
+  display: flex;
+  padding: 25px;
+  gap: 25px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #ffffff88;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+}
+
+.sidebar li {
+  list-style: none;
+  margin-bottom: 12px;
+  padding: 10px 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: #4a6cf7;
+  color: #fff;
+}
+
+/* MAIN CONTENT */
+.content {
+  flex: 1;
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 40px;
+  background: linear-gradient(135deg, #5975f4, #8aa8ff);
+  border-radius: 20px;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+.hero-btn {
+  margin-top: 10px;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #ffffffdd;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #fff;
+}
+
+/* CARDS SECTION */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  margin-bottom: 8px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.t-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 25px;
+  background: #ffffffaa;
+  backdrop-filter: blur(6px);
+}
